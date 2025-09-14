@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time Management System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Time Management System</h1>
+        <form id="taskForm">
+            <input type="text" id="title" placeholder="Task Title" required>
+            <input type="date" id="deadline" required>
+            <select id="priority">
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <button type="submit">Add Task</button>
+        </form>
+        <div id="tasks"></div>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>
