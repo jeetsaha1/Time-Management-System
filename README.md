@@ -1,6 +1,6 @@
 # 🕒 Time Management System
 
-![Time Management System Interface](dd027ef5-e8d3-4979-b856-9d54c9c6e198.png)
+
 
 ---
 
@@ -129,10 +129,7 @@ By integrating **scheduling, reminders, and analytics** into one platform, it em
 
 This project highlights how **technology + discipline** can together enhance performance, organization, and overall quality of life.
 
----
 
-### 📸 Interface Preview
-![Dashboard](dd027ef5-e8d3-4979-b856-9d54c9c6e198.png)
 
 ---
 
