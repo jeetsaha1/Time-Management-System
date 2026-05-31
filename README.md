@@ -105,12 +105,37 @@ This repo now includes a Flask-based web server so the app can run from one cent
 ### Share across a network
 - `server.py` is configured to bind to `0.0.0.0`.
 - Run the server on a shared machine or VM and open the app from other devices using its IP address.
+- Example from another device:
+  `http://192.168.1.42:5000`
 
-### Files added
-- `server.py` — Flask web backend
-- `storage.py` — shared task/user storage helpers
+### Deploy to the cloud
+This project can be hosted on Python-friendly platforms such as Railway, Render, Vercel, or Heroku.
+
+1. Push the repo to GitHub.
+2. Connect the repo to your cloud provider.
+3. For Vercel, use static site deployment with no backend required.
+
+### Deploy on Vercel (free)
+- Connect your GitHub repo to Vercel.
+- Select the project root.
+- No build command is required.
+- Set the output directory to the repository root, or leave blank.
+- Vercel will serve `index.html` and the `static/` assets.
+
+This version uses browser storage, so each visitor keeps their own tasks in their browser.
+
+### Files added for Vercel
+- `index.html` — root page for Vercel static hosting
+- `vercel.json` — static site configuration for Vercel
+
+### Files already included
+- `server.py` — local Flask web backend for development
+- `storage.py` — shared task/user storage helpers for local use
 - `requirements.txt` — Python dependencies
+- `Procfile` — cloud process declaration for Heroku-like hosts
+- `runtime.txt` — Python runtime version
 - `run_web.bat` — Windows launcher for the web app
+- `.gitignore` — ignores local and build artifacts
 
 ---
 
